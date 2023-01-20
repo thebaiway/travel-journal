@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+:root {
+  --text-white: white;
+  --header-bg: #F55A5A;
+  --title-color: #2B283A;
+  --link-color: #918E9B;
+  --border-color: rgba(128, 128, 128, 0.162);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: 'Inter', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  max-width: 768px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100vw;
+  height: 55px;
+  gap: 5px;
+  background: var(--header-bg);
+  color: var(--text-white);
+  margin-bottom: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar > i {
+  font-size: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar--title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card--div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  margin: 0px 35px;
+  padding-bottom: 20px;
+  gap: 20px;
+} 
+
+.card--img_div {
+  margin-top: 40px;
+}
+
+.card--img {
+  height: 168px;
+  width: 125px;
+  border-radius: 5px;
+  margin-top: -15px;
+}
+
+.card--detail_div {
+  margin-top: 15px;
+}
+
+.card--detail_sub-div-one {
+  display: flex;
+  align-items: center;
+  margin-bottom: -25px;
+}
+
+.card--detail_sub-div-one > i {
+  padding-right: 3px;
+  font-size: .8rem;
+  color: var(--header-bg);
+}
+
+.card--detail_sub-div-one > p {
+ font-size: .6rem;
+ color: var(--link-color);
+ text-decoration: underline;
+}
+
+.card--detail_sub-div-one > p:hover {
+  cursor: pointer;
+}
+
+.card--detail_sub-div-two h1 {
+  font-size: 1.7rem;
+}
+
+.location {
+  letter-spacing: 1px;
+  font-size: .6rem;
+  margin-right: 10px;
+}
+
+.date {
+  font-size: .8rem;
+}
+
+.description {
+  font-size: .6rem;
 }
